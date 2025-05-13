@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Card(props) {
   return (
@@ -7,7 +8,9 @@ function Card(props) {
         <div className='card-body' ><h1 className='card-title'>{props.title}</h1>
         <p className='card-text'>{props.text}</p>
         <p className='card-text'>{props.rate}</p></div>
-        <a href="#" className="btn btn-outline-Light btn-sm">View</a>
+        <Link to={`/view/${props.id}`}
+         className="btn btn-outline-Light btn-sm"
+         state={{product: props}}>View</Link>
     </div>
   )
 }

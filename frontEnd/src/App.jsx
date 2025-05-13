@@ -1,11 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import Login from './pages/login'
 import './App.css'
 import { BrowserRouter,Links,Link, Routes, Route } from 'react-router-dom'
 import Signup from './pages/Signup'
-import ProductList from './components/Product/ProductList'
+import ProductList from './pages/ProductList'
+import ViewPoduct from './pages/ViewPoduct'
 function App() {
 
   return (
@@ -13,6 +11,7 @@ function App() {
     <Routes>
       <Route path='/' element={<ProductList/>}></Route>
       <Route path='/signup' element={<Signup/>}></Route>
+      <Route path='/view/:id' element={<ViewPoduct/>}></Route>
     </Routes>
     </BrowserRouter>
   )
