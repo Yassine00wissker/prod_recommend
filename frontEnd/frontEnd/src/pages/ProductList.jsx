@@ -2,17 +2,17 @@ import React, { useEffect, useState } from 'react'
 import Card from '../components/Product/Card'
 function ProductList() {
   const [products, setProducts] = useState([])
-  useEffect(() => {//fetch data
+  useEffect(() => {
     setProducts([{
       id:1,
       title: "sqd",
-      rate: "4.5",
+      rate: "0.5",
       text: "dsgfdsgf"
     },
     {
       id:2,
       title: "sqd",
-      rate: "3.5",
+      rate: "0.5",
       text: "dsgfdsgf"
     }])
   }, [])
