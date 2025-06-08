@@ -10,7 +10,7 @@ function Login() {
     console.log(email,password)
     //data base autorization
     if(email && password){
-      navigate('/productList')
+      navigate('/Dashboard')
     }  
   }
   return (

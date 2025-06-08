@@ -2,8 +2,10 @@ import Login from './pages/login'
 import './App.css'
 import { BrowserRouter,Links,Link, Routes, Route } from 'react-router-dom'
 import Signup from './pages/Signup'
-import ProductList from './pages/ProductList'
-import ViewPoduct from './pages/ViewPoduct'
+import ProductList from './components/Product/ProductList'
+import ViewPoduct from './components/Product/ViewPoduct'
+import Dashboard from './pages/Dashboard'
+
 function App() {
 
   return (
@@ -11,7 +13,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Login/>}></Route>
       <Route path='/signup' element={<Signup/>}></Route>
-      <Route path='/productList' element={<ProductList/>}></Route>
+      <Route path='/Dashboard' element={<Dashboard/>}></Route>
       <Route path='/view/:id' element={<ViewPoduct/>}></Route>
     </Routes>
     </BrowserRouter>
